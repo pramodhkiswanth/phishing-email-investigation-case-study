@@ -1,6 +1,19 @@
 # SOC Investigation Case Study: Phishing Email Impersonating Account Storage Alert
 
-## Scenario Summary
+## Case Studies in This Repository
+
+This repository contains two phishing investigation scenarios, each focused on a different
+type of technique:
+
+- **Scenario 1** (below): Phishing email impersonating an account/storage alert, investigated
+  using Gmail metadata review, SPF/DKIM/DMARC authentication analysis, and VirusTotal domain
+  reputation checking.
+- **[Scenario 2: Business Email Compromise via Lookalike Domain](./scenario_2_bec_lookalike_domain.md)**:
+  A simulated BEC attempt investigated through Reply-To header mismatch, domain registration
+  age, and link redirection analysis, techniques that matter even when SPF/DKIM/DMARC aren't
+  the deciding factor.
+
+## Scenario 1 Summary
 This project documents a small SOC-style phishing email investigation based on a real suspicious email received in a personal mailbox. The email impersonated an account/storage alert and attempted to pressure the recipient into taking immediate action by claiming the account had been blocked and that stored photos and videos would be removed.
 
 The purpose of this case study was to demonstrate entry-level SOC analyst skills including phishing triage, email metadata review, indicator identification, reputation checking, and structured incident documentation.
